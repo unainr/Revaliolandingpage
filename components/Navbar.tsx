@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { ModeToggle } from "./ui/modetoggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,8 +37,8 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Sign In</Button>
             <Button>Get Started</Button>
+            <ModeToggle/>
           </div>
 
           {/* Mobile menu button */}

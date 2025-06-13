@@ -70,7 +70,7 @@ const Services = () => {
 	return (
 		<section
 			id="services"
-			className="py-24 bg-gradient-to-br from-[#f5f4ff] via-[#fbfbff] to-[#ffffff]">
+			className="py-24 ">
 			<div className="container mx-auto px-6">
 				<div className="text-center mb-16">
 					<h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6b4eff] via-[#8a52ff] to-[#bc57ff] mb-4">
@@ -86,7 +86,7 @@ const Services = () => {
 					{services.map((service, index) => (
 						<Card
 							key={index}
-							className="group transition-all duration-300 border border-border/40 hover:border-[#5f34f8]/40 relative overflow-hidden rounded-xl bg-white/90 backdrop-blur-md shadow-md hover:shadow-[0_8px_30px_rgba(95,52,248,0.2)]">
+							className="group transition-all duration-300 border border-border/40 hover:border-[#5f34f8]/40 relative overflow-hidden rounded-xl  backdrop-blur-md shadow-md hover:shadow-[0_8px_30px_rgba(95,52,248,0.2)]">
 							{/* Animated top line */}
 							<div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#5f34f8] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
@@ -107,7 +107,7 @@ const Services = () => {
 									{service.price}
 								</div>
 
-								<Button className="w-full relative overflow-hidden rounded-md bg-white border border-[#5f34f8] text-[#5f34f8] group-hover:text-white transition-all duration-300 hover:shadow-md">
+								<Button className="w-full relative overflow-hidden rounded-md  border border-[#5f34f8]  group-hover:text-white dark:group-hover:text-white transition-all duration-300 hover:shadow-md">
 									<span className="relative z-10">Get Quote</span>
 									<span className="absolute inset-0 bg-gradient-to-r from-[#5f34f8] via-[#7e4dff] to-[#a162f7] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0" />
 								</Button>
