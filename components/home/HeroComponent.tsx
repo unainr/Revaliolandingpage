@@ -125,7 +125,7 @@ const HeroComponent = () => {
     <>
       <section 
         ref={heroRef} 
-        className="relative min-h-screen py-20 flex items-center justify-center overflow-hidden bg-background"
+        className="relative min-h-screen py-32 flex items-center justify-center overflow-hidden bg-background"
       >
         {/* Enhanced animated gradient blobs background */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-primary/10 z-0">
@@ -249,7 +249,7 @@ const HeroComponent = () => {
         </div>
 
         {/* Enhanced Content */}
-        <div className="container mx-auto px-6 text-center relative z-10 max-w-5xl space-y-12">
+        <div className="container mx-auto px-6 text-center relative z-10 max-w-5xl space-y-8">
           {/* Enhanced Badge */}
           <motion.div
             initial={{ opacity: 0, y: -30 }}
@@ -272,7 +272,7 @@ const HeroComponent = () => {
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
             className="space-y-8"
           >
-            <h1 className="text-5xl md:text-8xl font-bold tracking-tight text-foreground leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1]">
               Build Better{" "}
               <span className="relative inline-block">
                 <span 
@@ -300,7 +300,7 @@ const HeroComponent = () => {
                 </svg>
               </span>
             </h1>
-            <p className="text-xl md:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg  text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Transform your ideas into powerful digital experiences with our cutting-edge technology and expert guidance.
             </p>
           </motion.div>
@@ -313,8 +313,7 @@ const HeroComponent = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <Button 
-              size="lg" 
-              className="group relative bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/40 transition-all duration-500 h-16 px-10 text-lg"
+              className="group relative bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/40 transition-all duration-500 h-12 px-10 text-md"
             >
               <span className="relative z-10">Get Started</span>
               <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
@@ -322,35 +321,14 @@ const HeroComponent = () => {
             </Button>
             <Button 
               variant="outline" 
-              size="lg" 
-              className="group relative border-2 h-16 px-10 text-lg hover:bg-background/80 backdrop-blur-sm transition-all duration-500 hover:border-primary/50"
+              className="group relative border-2 h-12 px-10 text-md hover:bg-background/80 backdrop-blur-sm transition-all duration-500 hover:border-primary/50"
             >
               <Play className="mr-3 h-6 w-6 text-primary" />
               Watch Demo
               <span className="absolute inset-0 rounded-md bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
             </Button>
           </motion.div>
-
-          {/* Enhanced Social Proof */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
-            className="pt-12"
-          >
-            <p className="text-sm text-muted-foreground mb-6">Trusted by innovative teams worldwide</p>
-            <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-all duration-700">
-              {[28, 24, 32, 28, 24].map((w, i) => (
-                <div 
-                  key={i} 
-                  className={`h-10 w-${w} bg-gradient-to-r from-muted to-muted/50 rounded-lg flex items-center justify-center transition-transform hover:scale-110 duration-300`}
-                  style={{ animationDelay: `${i * 0.1}s` }}
-                >
-                  <div className={`h-6 ${w < 26 ? 'w-16' : 'w-20'} bg-muted-foreground/40 rounded`}></div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+         
 
           {/* Enhanced Mockup Section */}
           <motion.div
