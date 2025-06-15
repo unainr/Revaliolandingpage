@@ -24,7 +24,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -34,7 +34,7 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-          </nav>
+          </nav> */}
 
           <div className="hidden md:flex items-center space-x-4">
             <Button>Get Started</Button>
@@ -57,7 +57,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
-            <nav className="flex flex-col space-y-4">
+            {/* <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -72,7 +72,7 @@ const Header = () => {
                 <Button variant="ghost">Sign In</Button>
                 <Button>Get Started</Button>
               </div>
-            </nav>
+            </nav> */}
           </div>
         )}
       </div>

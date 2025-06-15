@@ -16,7 +16,7 @@ const Features = () => {
       icon: Zap,
       title: "Lightning Fast",
       description: "Built for speed with modern architecture and optimized performance.",
-      color: "#5f34f8",
+      color: "#ee0820",
       details: [
         "50% faster load times",
         "Optimized database queries",
@@ -27,7 +27,7 @@ const Features = () => {
       icon: Shield,
       title: "Secure by Design",
       description: "Enterprise-grade security with end-to-end encryption and compliance.",
-      color: "#7c4dff",
+      color: "#ee0820",
       details: [
         "End-to-end encryption",
         "SOC 2 & GDPR compliant",
@@ -38,7 +38,7 @@ const Features = () => {
       icon: Users,
       title: "Team Collaboration",
       description: "Seamless collaboration tools for teams of all sizes.",
-      color: "#9d71fd",
+      color: "#ee0820",
       details: [
         "Real-time editing",
         "Role-based permissions",
@@ -49,7 +49,7 @@ const Features = () => {
       icon: Sparkles,
       title: "AI-Powered",
       description: "Intelligent automation and insights powered by advanced AI.",
-      color: "#5f34f8",
+      color: "#ee0820",
       details: [
         "Smart recommendations",
         "Predictive analytics",
@@ -60,7 +60,7 @@ const Features = () => {
       icon: Target,
       title: "Goal Oriented",
       description: "Focus on what matters with smart goal tracking and analytics.",
-      color: "#7c4dff",
+      color: "#ee0820",
       details: [
         "Custom KPI dashboards",
         "Progress visualization",
@@ -71,7 +71,7 @@ const Features = () => {
       icon: Globe,
       title: "Global Scale",
       description: "Deploy anywhere with our worldwide infrastructure.",
-      color: "#9d71fd",
+      color: "#ee0820",
       details: [
         "Multi-region deployment",
         "CDN integration",
@@ -109,22 +109,22 @@ const Features = () => {
     >
       {/* Background elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] z-0"></div>
-      <div className="absolute -top-40 -left-40 w-80 h-80 bg-[#5f34f8]/5 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-[#5f34f8]/5 rounded-full blur-3xl"></div>
+      <div className="absolute -top-40 -left-40 w-80 h-80 bg-[#ee0820]/5 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-[#ee0820]/5 rounded-full blur-3xl"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-64 h-64 border border-[#5f34f8]/10 rounded-full opacity-20"></div>
-      <div className="absolute bottom-20 left-20 w-40 h-40 border border-[#5f34f8]/10 rounded-full opacity-20"></div>
+      <div className="absolute top-20 right-20 w-64 h-64 border border-[#ee0820]/10 rounded-full opacity-20"></div>
+      <div className="absolute bottom-20 left-20 w-40 h-40 border border-[#ee0820]/10 rounded-full opacity-20"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div 
           className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
-          <div className="inline-block px-4 py-1 bg-[#5f34f8]/10 rounded-full text-[#5f34f8] font-medium text-sm mb-4 border border-[#5f34f8]/20">
+          <div className="inline-block px-4 py-1 bg-[#ee0820]/10 rounded-full text-[#ee0820] font-medium text-sm mb-4 border border-[#ee0820]/20">
             Why Choose Us
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Powerful <span className="bg-gradient-to-r from-[#5f34f8] to-[#9d71fd] bg-clip-text text-transparent">Features</span>
+            Powerful <span className="bg-gradient-to-r from-[#ee0820] to-[#ee0820] bg-clip-text text-transparent">Features</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Everything you need to build, deploy, and scale your applications with confidence.
@@ -219,7 +219,7 @@ const Features = () => {
         
         {/* Featured highlight */}
         <div 
-          className={`mt-20 p-8 rounded-2xl bg-gradient-to-r from-[#5f34f8]/10 to-[#9d71fd]/10 border border-[#5f34f8]/20 backdrop-blur-sm transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`mt-20 p-8 rounded-2xl bg-gradient-to-r from-[#ee0820]/10 to-[##ee0820]/10 border border-[#ee0820]/20 backdrop-blur-sm transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="space-y-4 text-center md:text-left">
@@ -228,7 +228,7 @@ const Features = () => {
             </div>
             <Button 
               size="lg" 
-              className="bg-[#5f34f8] hover:bg-[#5f34f8]/90 text-white px-8 h-12 rounded-xl shadow-lg shadow-[#5f34f8]/20 hover:shadow-xl hover:shadow-[#5f34f8]/30 transition-all duration-300"
+              className="bg-[#ee0820] hover:bg-[#ee0820]/90 text-white px-8 h-12 rounded-xl shadow-lg shadow-[#ee0820]/20 hover:shadow-xl hover:shadow-[#ee0820]/30 transition-all duration-300"
             >
               Start Free Trial
             </Button>

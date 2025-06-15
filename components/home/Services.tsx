@@ -73,7 +73,7 @@ const Services = () => {
 			className="py-24 ">
 			<div className="container mx-auto px-6">
 				<div className="text-center mb-16">
-					<h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6b4eff] via-[#8a52ff] to-[#bc57ff] mb-4">
+					<h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ee0820] via-[#ee0820] to-[#ee0830] mb-4">
 						Our <span className="text-primary">Services</span>
 					</h2>
 					<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -86,15 +86,15 @@ const Services = () => {
 					{services.map((service, index) => (
 						<Card
 							key={index}
-							className="group transition-all duration-300 border border-border/40 hover:border-[#5f34f8]/40 relative overflow-hidden rounded-xl  backdrop-blur-md shadow-md hover:shadow-[0_8px_30px_rgba(95,52,248,0.2)]">
+							className="group transition-all duration-300 border border-border/40 hover:border-[#ee0820]/40 relative overflow-hidden rounded-xl  backdrop-blur-md shadow-md hover:shadow-[0_8px_30px_rgba(95,52,248,0.2)]">
 							{/* Animated top line */}
-							<div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#5f34f8] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+							<div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#ee0820] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
 							<CardHeader>
-								<div className="w-14 h-14 bg-[#5f34f8]/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#5f34f8]/20 transition-all duration-300 transform group-hover:rotate-[8deg] shadow-inner">
-									<service.icon className="h-6 w-6 text-[#5f34f8]" />
+								<div className="w-14 h-14 bg-[#ee0820]/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#ee0820]/20 transition-all duration-300 transform group-hover:rotate-[8deg] shadow-inner">
+									<service.icon className="h-6 w-6 text-[#ee0820]" />
 								</div>
-								<CardTitle className="text-xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#5f34f8] group-hover:to-[#a162f7]">
+								<CardTitle className="text-xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#ee0820] group-hover:to-[#ee0820]">
 									{service.title}
 								</CardTitle>
 								<CardDescription className="text-base leading-relaxed text-muted-foreground transition-opacity duration-300 group-hover:opacity-90">
@@ -103,13 +103,13 @@ const Services = () => {
 							</CardHeader>
 
 							<CardContent className="space-y-4">
-								<div className="text-2xl font-bold text-[#5f34f8] flex items-baseline">
+								<div className="text-2xl font-bold text-[#ee0820] flex items-baseline">
 									{service.price}
 								</div>
 
-								<Button className="w-full relative overflow-hidden rounded-md  border border-[#5f34f8]  group-hover:text-white dark:group-hover:text-white transition-all duration-300 hover:shadow-md">
+								<Button className="w-full relative overflow-hidden rounded-md  border border-[#ee0820]  group-hover:text-white dark:group-hover:text-white transition-all duration-300 hover:shadow-md">
 									<span className="relative z-10">Get Quote</span>
-									<span className="absolute inset-0 bg-gradient-to-r from-[#5f34f8] via-[#7e4dff] to-[#a162f7] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0" />
+									<span className="absolute inset-0 bg-gradient-to-r from-[#ee0820] via-[#ee0820] to-[#ee0820] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0" />
 								</Button>
 							</CardContent>
 						</Card>

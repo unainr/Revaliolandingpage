@@ -122,54 +122,43 @@
 }
 
 
- @keyframes blob {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            25% { transform: translate(20px, -50px) scale(1.1); }
-            50% { transform: translate(-20px, 20px) scale(0.9); }
-            75% { transform: translate(50px, 50px) scale(1.05); }
-          }
-          
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-          }
-          
-          @keyframes gradient-shift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-          }
-          
-          @keyframes shine {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-          }
-          
-          @keyframes appear {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
-          }
-          
-          @keyframes appear-zoom {
-            0% { opacity: 0; transform: scale(0.98); }
-            100% { opacity: 1; transform: scale(1); }
-          }
-          
-          .animate-blob {
-            animation: blob 7s infinite;
-          }
-          
-          .animate-appear {
-            animation: appear 0.5s ease-out forwards;
-          }
-          
-          .animate-appear-zoom {
-            animation: appear-zoom 0.8s ease-out forwards;
-          }
-          
-          .bg-grid-pattern {
-            background-image: 
-              linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-          }
+@keyframes blob {
+          0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+          25% { transform: translate(20px, -50px) scale(1.1) rotate(90deg); }
+          50% { transform: translate(-20px, 20px) scale(0.9) rotate(180deg); }
+          75% { transform: translate(50px, 10px) scale(1.05) rotate(270deg); }
+        }
+        
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        @keyframes shine {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+        
+        @keyframes gradient-shift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes appear-zoom {
+          0% { opacity: 0; transform: scale(0.8); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .animate-blob { animation: blob 20s infinite; }
+        .animate-appear-zoom { animation: appear-zoom 1s ease-out forwards; }
+        
+        .bg-grid-pattern {
+          background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+          background-size: 50px 50px;
+        }
+        
+        .bg-gradient-radial {
+          background: radial-gradient(circle, var(--tw-gradient-stops));
+        }
