@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Shield, Users, Sparkles, Target, Globe, ArrowRight } from "lucide-react";
+import { Zap, Shield, Users, Sparkles, Target, Globe, ArrowRight, Home, FileText, CreditCard, BarChart3, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
@@ -11,74 +11,74 @@ const Features = () => {
   const [activeFeature, setActiveFeature] = useState(null);
   const sectionRef = useRef(null);
 
-  const features = [
-    {
-      icon: Zap,
-      title: "Lightning Fast",
-      description: "Built for speed with modern architecture and optimized performance.",
-      color: "#ee0820",
-      details: [
-        "50% faster load times",
-        "Optimized database queries",
-        "Edge caching technology"
-      ]
-    },
-    {
-      icon: Shield,
-      title: "Secure by Design",
-      description: "Enterprise-grade security with end-to-end encryption and compliance.",
-      color: "#ee0820",
-      details: [
-        "End-to-end encryption",
-        "SOC 2 & GDPR compliant",
-        "Regular security audits"
-      ]
-    },
-    {
-      icon: Users,
-      title: "Team Collaboration",
-      description: "Seamless collaboration tools for teams of all sizes.",
-      color: "#ee0820",
-      details: [
-        "Real-time editing",
-        "Role-based permissions",
-        "Activity tracking"
-      ]
-    },
-    {
-      icon: Sparkles,
-      title: "AI-Powered",
-      description: "Intelligent automation and insights powered by advanced AI.",
-      color: "#ee0820",
-      details: [
-        "Smart recommendations",
-        "Predictive analytics",
-        "Automated workflows"
-      ]
-    },
-    {
-      icon: Target,
-      title: "Goal Oriented",
-      description: "Focus on what matters with smart goal tracking and analytics.",
-      color: "#ee0820",
-      details: [
-        "Custom KPI dashboards",
-        "Progress visualization",
-        "Milestone tracking"
-      ]
-    },
-    {
-      icon: Globe,
-      title: "Global Scale",
-      description: "Deploy anywhere with our worldwide infrastructure.",
-      color: "#ee0820",
-      details: [
-        "Multi-region deployment",
-        "CDN integration",
-        "Auto-scaling resources"
-      ]
-    }
-  ];
+ const features = [
+  {
+    icon: Home, // Changed from Zap to Home
+    title: "Multi-Property Dashboard",
+    description: "Manage multiple properties from a single, intuitive dashboard. Track active filings, payment status, and important deadlines across your entire portfolio.",
+    color: "#ee0820",
+    details: [
+      "Track active filings across properties",
+      "Monitor payment status in real-time",
+      "Never miss important deadlines"
+    ]
+  },
+  {
+    icon: FileText, // Changed from Shield to FileText
+    title: "Document Management",
+    description: "Securely store, organize, and access all your property tax documents. Upload authorizations, view filings, and download invoices whenever you need them.",
+    color: "#ee0820",
+    details: [
+      "Secure document storage",
+      "Easy upload and organization",
+      "Instant access to all filings"
+    ]
+  },
+  {
+    icon: CreditCard, // Changed from Users to CreditCard  
+    title: "Payment Tracking",
+    description: "Never miss a payment again. Track invoice status, manage payment methods, and receive notifications for upcoming due dates.",
+    color: "#ee0820",
+    details: [
+      "Invoice status tracking",
+      "Multiple payment methods",
+      "Automated due date reminders"
+    ]
+  },
+  {
+    icon: Smartphone, // Changed from Sparkles to Smartphone
+    title: "Real-Time Updates",
+    description: "Get instant notifications about filing status changes, payment confirmations, and important deadlines through our integrated messaging system.",
+    color: "#ee0820",
+    details: [
+      "Instant status notifications",
+      "Payment confirmations",
+      "Deadline alerts"
+    ]
+  },
+  {
+    icon: Shield, // Kept Shield but moved to security
+    title: "Secure & Compliant",
+    description: "Your sensitive tax information is protected with bank-level security. All documents are encrypted and accessible only to you and our support team.",
+    color: "#ee0820",
+    details: [
+      "Bank-level security",
+      "End-to-end encryption",
+      "Restricted access controls"
+    ]
+  },
+  {
+    icon: BarChart3, // Changed from Globe to BarChart3
+    title: "Filing History",
+    description: "Access complete filing history for each property. Track past filings, review outcomes, and maintain detailed records for your tax planning.",
+    color: "#ee0820",
+    details: [
+      "Complete filing history",
+      "Detailed analytics",
+      "Comprehensive reporting"
+    ]
+  }
+];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -120,14 +120,14 @@ const Features = () => {
         <div 
           className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
-          <div className="inline-block px-4 py-1 bg-[#ee0820]/10 rounded-full text-[#ee0820] font-medium text-sm mb-4 border border-[#ee0820]/20">
+          {/* <div className="inline-block px-4 py-1 bg-[#ee0820]/10 rounded-full text-[#ee0820] font-medium text-sm mb-4 border border-[#ee0820]/20">
             Why Choose Us
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Powerful <span className="bg-gradient-to-r from-[#ee0820] to-[#ee0820] bg-clip-text text-transparent">Features</span>
+          </div> */}
+          <h2 className="text-5xl  font-bold text-foreground mb-6">
+             Everything You Need to <br /> <span className="bg-gradient-to-r from-[#ee0820] to-[#ee0820] bg-clip-text text-transparent">Manage Property Taxes</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to build, deploy, and scale your applications with confidence.
+            From filing to payment tracking, Revalio handles all aspects of your property tax management with ease and precision. 
           </p>
         </div>
         

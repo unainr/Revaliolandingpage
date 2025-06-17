@@ -3,7 +3,7 @@ import Features from "@/components/home/Featured";
 import Hero from "@/components/home/HeroComponent";
 import PricingComponent from "@/components/home/Pricing";
 import Services from "@/components/home/Services";
-import Newsletter from "@/components/NewsLetter";
+import FinalCTA from "@/components/NewsLetter";
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
     <Hero/>
     <Features/>
     <About/>
-    <Services/>
-    <Newsletter/>
-    {/* <PricingComponent/> */}
+    {/* <Services/> */}
+    <PricingComponent/>
+    <FinalCTA/>
   </div>
   );
 }

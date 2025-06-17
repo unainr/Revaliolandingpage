@@ -37,7 +37,7 @@ const Header = () => {
           </nav> */}
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button>Get Started</Button>
+            <Button className="bg-red-500 hover:bg-red-400 text-white">Get Started</Button>
             <ModeToggle/>
           </div>
 

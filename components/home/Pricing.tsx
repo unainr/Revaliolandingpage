@@ -11,58 +11,57 @@ const PricingComponent = () => {
     setIsLoaded(true);
   }, []);
 
-  const tiers = [
-    {
-      name: "Starter",
-      id: "starter",
-      price: isYearly ? 199 : 19,
-      description: "Perfect for individuals and small projects",
-      features: [
-        "Up to 5 projects",
-        "Basic analytics",
-        "24/7 email support",
-        "1 team member",
-        "Standard integrations"
-      ],
-      cta: "Get Started",
-      mostPopular: false
-    },
-    {
-      name: "Professional",
-      id: "professional",
-      price: isYearly ? 499 : 49,
-      description: "Ideal for growing businesses and teams",
-      features: [
-        "Unlimited projects",
-        "Advanced analytics",
-        "Priority support",
-        "Up to 10 team members",
-        "Advanced integrations",
-        "Custom workflows",
-        "API access"
-      ],
-      cta: "Go Professional",
-      mostPopular: true
-    },
-    {
-      name: "Enterprise",
-      id: "enterprise",
-      price: isYearly ? 999 : 99,
-      description: "For large organizations with complex needs",
-      features: [
-        "Unlimited everything",
-        "Dedicated account manager",
-        "24/7 phone support",
-        "Unlimited team members",
-        "Custom integrations",
-        "Advanced security",
-        "SLA guarantees",
-        "White-labeling options"
-      ],
-      cta: "Contact Sales",
-      mostPopular: false
-    }
-  ];
+ const tiers = [
+  {
+    name: "Starter",
+    id: "starter",
+    price: 0, // Free plan
+    description: "Perfect for individual property owners",
+    features: [
+      "Up to 2 properties",
+      "Basic filing management",
+      "Document storage",
+      "Email support",
+      "Mobile app access"
+    ],
+    cta: "Get Started Free",
+    mostPopular: false
+  },
+  {
+    name: "Professional",
+    id: "professional", 
+    price: isYearly ? 290 : 29, // $29/month or $290/year (save ~17%)
+    description: "Ideal for property investors and managers",
+    features: [
+      "Up to 10 properties",
+      "Advanced filing management", 
+      "Unlimited document storage",
+      "Priority support",
+      "Payment tracking",
+      "Custom notifications",
+      "Filing history reports"
+    ],
+    cta: "Start Free Trial",
+    mostPopular: true
+  },
+  {
+    name: "Enterprise",
+    id: "enterprise",
+    price: "Custom", // Custom pricing
+    description: "For large portfolios and property management companies",
+    features: [
+      "Unlimited properties",
+      "Custom integrations",
+      "Dedicated account manager", 
+      "API access",
+      "Bulk operations",
+      "Advanced analytics",
+      "White-label options"
+    ],
+    cta: "Contact Sales",
+    mostPopular: false
+  }
+];
 
   return (
      <section className="relative py-20 overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-200">
@@ -80,12 +79,11 @@ const PricingComponent = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
-              Solutions for Every <span className="bg-gradient-to-r from-red-600 to-red-600 dark:from-red-500 dark:to-indigo-400 bg-clip-text text-transparent">Scale</span>
+             Choose Your  <span className="bg-gradient-to-r from-red-600 to-red-600 dark:from-red-500 dark:to-indigo-400 bg-clip-text text-transparent">Plan</span>
             </h2>
             
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Choose the perfect plan to power your digital transformation journey
-            </p>
+Flexible pricing that grows with your property portfolio. Start free and upgrade as your needs expand.            </p>
             
             {/* Billing toggle */}
             <div className="flex items-center justify-center mt-8 space-x-4">
@@ -183,31 +181,7 @@ const PricingComponent = () => {
             </div>
           </div>
           
-          {/* Testimonial */}
-          <div className={`mt-20 text-center ${isLoaded ? 'animate-fade-in-up delay-400' : 'opacity-0'}`}>
-            <div className="inline-flex items-center justify-center">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className={`w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-600 border-2 border-white dark:border-gray-800 flex items-center justify-center text-xs font-medium text-white`}>
-                    {/* Replace with actual customer avatars */}
-                    {i}
-                  </div>
-                ))}
-              </div>
-              <p className="ml-4 text-sm text-gray-600 dark:text-gray-300">
-                <span className="font-semibold text-gray-900 dark:text-gray-100">500+ customers</span> are already building better solutions
-              </p>
-            </div>
-            <blockquote className="mt-6 max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 dark:text-gray-300 italic">
-                "This platform has completely transformed how we approach digital solutions. The ROI has been incredible."
-              </p>
-              <footer className="mt-3">
-                <div className="text-base font-medium text-gray-900 dark:text-gray-100">Sarah Johnson</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">CTO at TechInnovate</div>
-              </footer>
-            </blockquote>
-          </div>
+         
           
           {/* FAQ teaser */}
           <div className={`mt-20 text-center ${isLoaded ? 'animate-fade-in-up delay-500' : 'opacity-0'}`}>
