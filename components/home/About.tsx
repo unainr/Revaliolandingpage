@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Award, Users, Shield, Clock, Building } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -133,13 +134,17 @@ const About = () => {
             </div>
             
             <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <Link href={"https://revalio.hellorovamo.com/"}
+						target="_blank">
+
               <Button 
                 size="lg" 
                 className="group bg-[#ef4444] hover:bg-[#dc2626] text-white px-8 py-4 h-auto rounded-xl shadow-lg shadow-[#ef4444]/20 hover:shadow-xl hover:shadow-[#ef4444]/30 transition-all duration-300"
-              >
-                Try Free Demo
+                >
+                Try Demo
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
+                </Link>
             </div>
           </div>
           

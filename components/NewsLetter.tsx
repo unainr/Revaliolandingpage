@@ -2,6 +2,7 @@
 import { Calendar, Play } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const FinalCTA = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -42,12 +43,15 @@ const FinalCTA = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <Link href={"https://revalio.hellorovamo.com/"}
+						target="_blank">
+
             <Button
               onClick={handleStartDemo}
               disabled={isLoading}
               size="lg"
               className="px-8 py-4  bg-red-500 text-white hover:bg-red-400 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-w-[200px]"
-            >
+              >
               {isLoading ? (
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -60,6 +64,7 @@ const FinalCTA = () => {
                 </div>
               )}
             </Button>
+              </Link>
             
             <Button
               onClick={handleScheduleConsultation}

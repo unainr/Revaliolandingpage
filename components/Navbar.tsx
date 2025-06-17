@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ModeToggle } from "./ui/modetoggle";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,10 @@ const Header = () => {
           </nav> */}
 
           <div className="hidden md:flex items-center space-x-4">
+            <Link href={"https://revalio.hellorovamo.com/"}
+						target="_blank">
             <Button className="bg-red-500 hover:bg-red-400 text-white">Get Started</Button>
+            </Link>
             <ModeToggle/>
           </div>
 

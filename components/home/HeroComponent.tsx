@@ -317,7 +317,9 @@ const HeroSection: React.FC = () => {
 							</span>
 						</h1>
 						<p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-							Streamline property tax filings, track payments, and manage multiple properties from one powerful dashboard. Save time, reduce stress, and never miss a deadline again.
+							Streamline property tax filings, track payments, and manage
+							multiple properties from one powerful dashboard. Save time, reduce
+							stress, and never miss a deadline again.
 						</p>
 					</motion.div>
 
@@ -327,16 +329,18 @@ const HeroSection: React.FC = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
 						className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-						<Button className="group relative bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl shadow-red-500/25 hover:shadow-2xl hover:shadow-red-500/40 transition-all duration-500 h-12 px-10 text-md text-white">
-							<span className="relative z-10">Try Free Demo</span>
-							<ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
-							<span className="absolute inset-0 rounded-md bg-white/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-						</Button>
+						<Link href={"https://revalio.hellorovamo.com/"} target="_blank">
+							<Button className="group relative bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl shadow-red-500/25 hover:shadow-2xl hover:shadow-red-500/40 transition-all duration-500 h-12 px-10 text-md text-white">
+								<span className="relative z-10">Try Demo</span>
+								<ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
+								<span className="absolute inset-0 rounded-md bg-white/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+							</Button>
+						</Link>
 						<Button
 							variant="outline"
 							className="group relative border-2 h-12 px-10 text-md hover:bg-background/80 backdrop-blur-sm transition-all duration-500 hover:border-red-500/50">
 							<Play className="mr-3 h-6 w-6 text-red-500" />
-						View Pricing
+							Join Waitlist
 							<span className="absolute inset-0 rounded-md bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
 						</Button>
 					</motion.div>
@@ -353,13 +357,13 @@ const HeroSection: React.FC = () => {
 								"border-red-500/20 dark:border-red-500/10 mx-auto max-w-4xl"
 							)}>
 							<div className=" relative w-full  min-h-screen   bg-gradient-to-br from-background to-red-50 dark:to-red-950/20 flex items-center  justify-center">
-									<Image
-										src="/image.png"
-										alt="Mockup"
-										className="object-cover w-full h-full "
-										fill={true}
-									/>
-								</div>
+								<Image
+									src="/image.png"
+									alt="Mockup"
+									className="object-cover w-full h-full "
+									fill={true}
+								/>
+							</div>
 						</Mockup>
 					</motion.div>
 				</div>
