@@ -17,7 +17,7 @@ const PricingComponent = () => {
 		{
 			name: "Starter",
 			id: "starter",
-			price: "Comming Soon",
+			price: "Coming soon",
 			description: "Perfect for individual property owners",
 			features: [
 				"Up to 2 properties",
@@ -32,7 +32,7 @@ const PricingComponent = () => {
 		{
 			name: "Professional",
 			id: "professional",
-			price: "Comming Soon",
+			price: "Coming soon",
 			// price: isYearly ? 290 : 29,
 			description: "Ideal for property investors and managers",
 			features: [
@@ -50,7 +50,7 @@ const PricingComponent = () => {
 		{
 			name: "Enterprise",
 			id: "enterprise",
-			price: "Comming Soon",
+			price: "Coming soon",
 			description: "For large portfolios and property management companies",
 			features: [
 				"Unlimited properties",
