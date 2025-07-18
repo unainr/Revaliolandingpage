@@ -59,7 +59,7 @@ const Subscribe = () => {
           className="flex-1 px-4 py-3  border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200"
         />
         <Button 
- onClick={handleSubmit} type='submit' className="whitespace-nowrap px-6 py-4 bg-red-500 hover:bg-red-400 text-white text-base font-medium shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
+ onClick={handleSubmit} type='submit' className="whitespace-nowrap cursor-pointer px-6 py-4 bg-red-500 hover:bg-red-400 text-white text-base font-medium shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
           Subscribe Now
         </Button>
         

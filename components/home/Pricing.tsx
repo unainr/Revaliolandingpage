@@ -205,7 +205,7 @@ const PricingComponent = () => {
 										href={"https://revalio.hellorovamo.com/"}
 										target="_blank">
 										<Button
-											className={`w-full py-6 text-base font-medium rounded-xl group ${
+											className={`w-full py-6 text-base font-medium cursor-pointer  rounded-xl group ${
 												tier.mostPopular
 													? "bg-gradient-to-r from-red-600 to-red-600 hover:from-red-500 hover:to-red-500 dark:from-red-500 dark:to-red-500 dark:hover:from-red-400 dark:hover:to-red-400 text-white shadow-lg shadow-red-500/20 dark:shadow-red-900/30"
 													: "bg-white dark:bg-gray-800 border-2 border-red-500/30 dark:border-red-400/30 text-red-700 dark:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/30"

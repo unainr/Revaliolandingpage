@@ -214,7 +214,7 @@ const Features = () => {
             </div>
             <Button 
               size="lg" 
-              className="bg-[#ee0820] hover:bg-[#ee0820]/90 text-white px-8 h-12 rounded-xl shadow-lg shadow-[#ee0820]/20 hover:shadow-xl hover:shadow-[#ee0820]/30 transition-all duration-300"
+              className="bg-[#ee0820] hover:bg-[#ee0820]/90 cursor-pointer text-white px-8 h-12 rounded-xl shadow-lg shadow-[#ee0820]/20 hover:shadow-xl hover:shadow-[#ee0820]/30 transition-all duration-300"
             >
               Start Free Trial
             </Button>

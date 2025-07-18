@@ -148,7 +148,7 @@ const About = () => {
               <Link href="https://revalio.hellorovamo.com/" target="_blank">
                 <Button 
                   size="lg" 
-                  className="group bg-[#ef4444] hover:bg-[#dc2626] text-white px-8 py-4 h-auto rounded-xl shadow-lg shadow-[#ef4444]/20 hover:shadow-xl hover:shadow-[#ef4444]/30 transition-all duration-300"
+                  className="group cursor-pointer bg-[#ef4444] hover:bg-[#dc2626] text-white px-8 py-4 h-auto rounded-xl shadow-lg shadow-[#ef4444]/20 hover:shadow-xl hover:shadow-[#ef4444]/30 transition-all duration-300"
                 >
                   Try Demo
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

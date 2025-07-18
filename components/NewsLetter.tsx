@@ -50,7 +50,7 @@ const FinalCTA = () => {
               onClick={handleStartDemo}
               disabled={isLoading}
               size="lg"
-              className="px-8 py-4  bg-red-500 text-white hover:bg-red-400 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-w-[200px]"
+              className="px-8 py-4  bg-red-500 cursor-pointer text-white hover:bg-red-400 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-w-[200px]"
               >
               {isLoading ? (
                 <div className="flex items-center gap-2">
@@ -70,7 +70,7 @@ const FinalCTA = () => {
               onClick={handleScheduleConsultation}
               size="lg"
               variant="outline"
-              className="px-8 py-4 text-lg font-semibold rounded-xl border-2 hover:bg-primary/5 transition-all duration-300 min-w-[200px]"
+              className="px-8 py-4 text-lg cursor-pointer font-semibold rounded-xl border-2 hover:bg-primary/5 transition-all duration-300 min-w-[200px]"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Schedule Consultation

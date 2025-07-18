@@ -330,7 +330,7 @@ const HeroSection: React.FC = () => {
 						transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
 						className="flex flex-col sm:flex-row gap-6 justify-center items-center">
 						<Link href={"https://revalio.hellorovamo.com/"} target="_blank">
-							<Button className="group relative bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl shadow-red-500/25 hover:shadow-2xl hover:shadow-red-500/40 transition-all duration-500 h-12 px-10 text-md text-white">
+							<Button className="group relative cursor-pointer bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-xl shadow-red-500/25 hover:shadow-2xl hover:shadow-red-500/40 transition-all duration-500 h-12 px-10 text-md text-white">
 								<span className="relative z-10">Try Demo</span>
 								<ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
 								<span className="absolute inset-0 rounded-md bg-white/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
@@ -338,7 +338,7 @@ const HeroSection: React.FC = () => {
 						</Link>
 						<Button
 							variant="outline"
-							className="group relative border-2 h-12 px-10 text-md hover:bg-background/80 backdrop-blur-sm transition-all duration-500 hover:border-red-500/50">
+							className="group relative cursor-pointer border-2 h-12 px-10 text-md hover:bg-background/80 backdrop-blur-sm transition-all duration-500 hover:border-red-500/50">
 							<Play className="mr-3 h-6 w-6 text-red-500" />
 							Join Waitlist
 							<span className="absolute inset-0 rounded-md bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>

@@ -40,7 +40,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link href={"https://revalio.hellorovamo.com/"}
 						target="_blank">
-            <Button className="bg-red-500 hover:bg-red-400 text-white">Get Started</Button>
+            <Button className="bg-red-500 cursor-pointer hover:bg-red-400 text-white">Get Started</Button>
             </Link>
             <ModeToggle/>
           </div>
